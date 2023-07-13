@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Islam</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <ol>
+        <li>معلومة</li>
+        <li>كتب</li>
+        <li>اقسام</li>
+        <li>عن الصفحة</li>
+        <li>التواصل</li>
+    </ol>
+    <h1>السلام عليكم</h1>
+    
+    <div class="nav">
+        <div class="menu"></div>
+        <ul>
+            <li class="list">
+                <a href="القران/القران-menu.html" style="--clr:#f44336;">
+                    <span class="text">القران</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="الصحابة\الصحابة.html" target="_blank" style="--clr:#ffa117;">
+                    <span class="text">الصحابه</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="الاحاديث\الاحاديث.html" style="--clr:#0fc70f;">
+                    <span class="text">الاحاديث</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="الانبياء\الانبياء.html" style="--clr:#2196f3;">
+                    <span class="text">الانبياء</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="العقيدة\العقيدة.html" style="--clr:#b145e9;">
+                    <span class="text">العقيدة</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>اسماء السور</h3>
+        <h3>اسماء السور</h3>
+        <h3>اسماء السور</h3>
+        <h3>اسماء السور</h3>
+        <h3>اسماء السور</h3>
+        <h3>اسماء السور</h3>
+    </div>
+    <p>copyrights ⓒ Ahmed Mokhtar , Yossra Radwan  2022</p>
+
+    <form role="search" method="get" id="searchform" class="searchform" action="http://www.google.com/search?hl=en-GB&source=hp&q=">
+        <div id="gform">
+            <label class="screen-reader-text" for="s"></label>
+            <input type="text" placeholder="Search.." value="" name="q" id="s">
+            <input type="submit" class="btn fa-input" value="Search" style="font-family: FontAwesome;">	
+        </div>
+    </form>
+
+    
+    <script>
+        let menu = document.querySelector('.menu');
+        let nav = document.querySelector('.nav');
+        menu.onclick = function(){nav.classList.toggle('active');}
+        let list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => 
+        item.addEventListener('click', activeLink));
+    </script>
+</body>
+</html>      
+
