@@ -1,2 +1,2 @@
-# IslamWebsite.github.io
-Islam Website
+# https://ahmedmokhar.github.io/IslamWebsite
+## Islam Website
